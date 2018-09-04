@@ -1,15 +1,13 @@
-Based on function from: [https://stackoverflow.com/a/133997](https://stackoverflow.com/a/133997)
-
-Bookmarklet [zalukaj -> alltube](javascript:t=document.location.href.split('/').pop().replace('.html','').replace(/_/g,' ');var f=document.createElement('form');f.setAttribute('method','post');f.setAttribute('action','https://alltube.tv/szukaj');var i=document.createElement('input');i.setAttribute('name','search');i.setAttribute('type','hidden');i.setAttribute('value',t);f.appendChild(i);w=window.open('','_blank');w.document.body.appendChild(f);f.submit();
+Bookmarklet [zalukaj -> alltube](javascript:t=document.location.href.split\('/'\).pop\(\).replace\('.html',''\).replace\(/_/g,' '\);var f=document.createElement\('form'\);f.setAttribute\('method','post'\);f.setAttribute\('action','https://alltube.tv/szukaj'\);var i=document.createElement\('input'\);i.setAttribute\('name','search'\);i.setAttribute\('type','hidden'\);i.setAttribute\('value',t\);f.appendChild\(i\);w=window.open\('','_blank'\);w.document.body.appendChild\(f\);f.submit\(\);
 )
 
-Code in bookmarklet `bookmarklet.js`
+Bookmarklet code in `bookmarklet.js`
 
 ```
 javascript:t=document.location.href.split('/').pop().replace('.html','').replace(/_/g,' ');var f=document.createElement('form');f.setAttribute('method','post');f.setAttribute('action','https://alltube.tv/szukaj');var i=document.createElement('input');i.setAttribute('name','search');i.setAttribute('type','hidden');i.setAttribute('value',t);f.appendChild(i);w=window.open('','_blank');w.document.body.appendChild(f);f.submit();
 ```
 
-More read in `bookmarklet-source.js`
+More readable code in `bookmarklet-source.js`
 
 ```
 //---------------------------------------------------------------------
